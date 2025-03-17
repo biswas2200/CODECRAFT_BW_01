@@ -1,7 +1,5 @@
 package com.CodeCraft.bwtt01.dto;
 
-import com.fasterxml.jackson.annotation.JsonIgnore;
-
 import java.util.Objects;
 import java.util.UUID;
 
@@ -66,7 +64,8 @@ public class UserDetailsDto {
     public boolean equals(Object o) {
         if (o == null || getClass() != o.getClass()) return false;
         UserDetailsDto that = (UserDetailsDto) o;
-        return Objects.equals(id, that.id) && Objects.equals(name, that.name) && Objects.equals(email, that.email) && Objects.equals(age, that.age);
+        return Objects.equals(id, that.id) && Objects.
+                equals(name, that.name) && Objects.equals(email, that.email) && Objects.equals(age, that.age);
     }
 
     @Override
